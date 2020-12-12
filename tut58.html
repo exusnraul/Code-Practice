@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Set time clear time</title>
+</head>
+
+<body>
+    <div class="container">
+        Time Now Is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is tut 58");
+        // setTimeout --> Allows us to run a function once after the interval of time
+        // clearTimeout --> Allows us to run a function repeatedly after the interval of time
+        // function greet() {
+        //     console.log("Hello GM");
+        // }
+        // greet();
+
+        // function greet(name,byetext) {
+        //     console.log("Hello Good Morning" + name + " " , "Take Care");
+        // }
+        // // greet();
+        // setTimeout(greet, 2000, " Rahul");
+
+        // function greet(name,byetext) {
+            // console.log("Hello Good Morning" + name + " " , "Take Care");
+        // }
+    //    setInterval(greet,1, " Rahul", "Good Day");
+
+    function displaytime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displaytime, 1000);
+
+        
+
+
+    </script>
+</body>
+
+</html>

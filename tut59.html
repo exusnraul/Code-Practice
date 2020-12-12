@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+<style>
+    .container {
+        background-color: chocolate;
+        font-size: 50px;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 150px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* text-decoration-color: blue */
+
+
+
+    }
+
+    #time {
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <div class="container">
+        Current Time <span id="time"></span>
+    </div>
+    <script>
+        // console.log("kkjsakjkj");
+        // let now = new Date();
+        // console.log(now);
+
+        // let newdate=new Date("2039-09-30");
+        // // console.log(newdate);
+
+
+        // //  let newdate=new Date(year, mnth, date, hours, minutes, seconds, miliseconds);
+        let newdate = Date();
+        // console.log(newdate);
+        // // let newdate=0;
+
+        // let yr=newdate.getFullYear();
+        // console.log("The Year is ", yr);
+
+        // let dt = newdate.getDate();
+        // console.log("The date is", dt);
+
+        // let hours = newdate.getHours();
+        // console.log("THe hour is" , hours);
+
+        // let day = newdate.getDay();
+        // console.log("The day is ", day);
+
+        // //  let set= date.now();
+        // // let new = null;
+
+
+        function updatetime() {
+            time.innerHTML = new Date()
+            setInterval(updatetime, 1000);
+        }
+        updatetime();
+
+
+
+
+    </script>
+</body>
+
+</html>
